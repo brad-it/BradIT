@@ -17,7 +17,7 @@ This GitHub showcases:
 
 ## 📁 Repositories (Sections)
 - `soc-analyst-roadmap`: SOC learning steps + labs + detections  
-- `ethical-hacking-roadmap`: Offensive concepts for defender insight  
+- `Ethical Hacking`: Offensive concepts for defender insight  
 - `cloud-security-roadmap`: Cloud security and Azure monitoring  
 - `automation-scripts`: Python & PowerShell scripts for SOC tasks  
 - `notes-and-cheatsheets`: Reference notes
