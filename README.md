@@ -16,8 +16,8 @@ This GitHub showcases:
 🔹 Automation & Detection Engineering
 
 ## 📁 Repositories (Sections)
-- `soc-analyst-roadmap`: SOC learning steps + labs + detections  
+- `SOC Analyst`: SOC learning steps + labs + detections  
 - `Ethical Hacking`: Offensive concepts for defender insight  
-- `cloud-security-roadmap`: Cloud security and Azure monitoring  
+- `Cloud Security`: Cloud security and Azure monitoring  
 - `automation-scripts`: Python & PowerShell scripts for SOC tasks  
 - `notes-and-cheatsheets`: Reference notes
