@@ -14,8 +14,7 @@ This repository contains a set of notes covering the fundamental concepts and co
 6. [Process Management](#process-management)
 7. [Package Management](#package-management)
 8. [Networking Commands](#networking-commands)
-9. [Shell Scripting Basics](#shell-scripting-basics)
-10. [Conclusion](#conclusion)
+9. [Conclusion](#conclusion)
 
 ---
 
