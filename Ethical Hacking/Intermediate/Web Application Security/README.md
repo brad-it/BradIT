@@ -1,4 +1,4 @@
-# Web Application Security
+## Web Application Security
 
 Web application security focuses on protecting websites and web applications from common threats, attacks, and vulnerabilities. Ethical hackers use various tools and techniques to identify and exploit these vulnerabilities, helping organizations improve their security posture before attackers can exploit weaknesses.
 
@@ -25,4 +25,3 @@ Ethical hackers use a variety of tools to test the security of web applications 
 - **OWASP ZAP (Zed Attack Proxy)**: An open-source tool that helps detect vulnerabilities such as SQLi and XSS, offering both automated scanners and manual testing tools.
 - **Nikto**: A web server scanner that identifies potential vulnerabilities, such as outdated software and configuration weaknesses.
 - **Nmap**: A network scanning tool to discover open ports and services, helping ethical hackers identify attack vectors.
-- **Metasploit**: A framework used for penetration testing to develop and execute exploits against vulnerable web applications and systems.
