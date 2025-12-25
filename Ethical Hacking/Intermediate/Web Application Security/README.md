@@ -6,7 +6,7 @@ Web application security focuses on protecting websites and web applications fro
 
 | **Vulnerability**                              | **Description**                                                                                                 |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| **Injection**                                   | Occurs when untrusted data is sent to an interpreter (e.g., SQL, OS commands), allowing attackers to manipulate databases or systems. |
+| **SQL Injection**                                   | Occurs when untrusted data is sent to an interpreter (e.g., SQL, OS commands), allowing attackers to manipulate databases or systems. |
 | **Broken Authentication**                      | Problems with authentication and session management, allowing attackers to impersonate users or bypass authentication mechanisms. |
 | **Sensitive Data Exposure**                    | Sensitive data (e.g., passwords, credit card information) is not properly protected (e.g., through encryption), leading to potential theft. |
 | **XML External Entities (XXE)**                | Exploiting XML parsers to access sensitive data or internal files by sending malicious XML input.              |
