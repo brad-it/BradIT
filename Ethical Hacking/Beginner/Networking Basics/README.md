@@ -74,7 +74,7 @@ This document provides an overview of fundamental networking concepts commonly u
 |------|-------------|
 | Hub | Broadcasts incoming data to all ports |
 | Layer 2 Switch | Forwards frames using MAC addresses |
-| Layer 3 Switch | Performs switching and basic routing |
+| Layer 3 Switch | Performs switching and basic routing. Has the ability for virtual LANS (VLANS) |
 | Router | Routes packets between networks using IP addresses |
 
 ### What Is a Hub?
