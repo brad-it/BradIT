@@ -100,35 +100,59 @@ john hashes.txt
 
 Example output:
 
+```text
 user:password123
-Using a Wordlist
+```
+
+---
+
+# Using a Wordlist
 
 A wordlist attack tries passwords from a file.
 
-Example using the popular rockyou.txt wordlist:
+Example using the popular `rockyou.txt` wordlist:
 
+```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
-Incremental (Brute Force) Mode
+```
+
+---
+
+# Incremental (Brute Force) Mode
+
+```bash
 john --incremental hashes.txt
+```
 
 This mode systematically tries combinations of characters.
 
 ⚠️ Brute force attacks can take a very long time depending on password complexity.
 
-Single Crack Mode
+---
+
+# Single Crack Mode
 
 Uses username and related information to generate guesses.
 
+```bash
 john --single hashes.txt
-Identifying Hash Types
+```
+
+---
+
+# Identifying Hash Types
 
 Use:
 
+```bash
 john --list=formats
+```
 
 You can specify a format manually:
 
+```bash
 john --format=sha512crypt hashes.txt
+```
 
 
 
