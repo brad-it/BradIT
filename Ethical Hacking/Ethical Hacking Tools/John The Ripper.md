@@ -98,18 +98,18 @@ john --format=sha512crypt hashes.txt
 
 
 
-#John Utility Reference Table
+# John Utility Reference Table
 
-Utility	Purpose	| Example Input                                     |	Output Hash File
-ssh2john.py     |	Extract hash from encrypted SSH private keys	| id_rsa	ssh.hash
-zip2john	    |   Extract hash from ZIP archives	                | secret.zip zip.hash
-rar2john	    |   Extract hash from RAR archives		            | locked.rar rar.hash
-pdf2john.py	    |   Extract hash from password-protected PDFs	    | document.pdf	pdf.hash
-office2john.py  |	Extract hash from Microsoft Office files	    | report.docx	office.hash
-keepass2john    |	Extract hash from KeePass databases	            | vault.kdbx	keepass.hash
-hccap2john      |	Convert WPA/WPA2 captures	                    | capture.hccap	wifi.hash
-unshadow        |	Combine Linux passwd/shadow files               | passwd shadow	combined.txt
-
+| Utility | Purpose | Example Input | Output Hash File |
+|---|---|---|---|
+| `ssh2john.py` | Extract hash from encrypted SSH private keys | `id_rsa` | `ssh.hash` |
+| `zip2john` | Extract hash from ZIP archives | `secret.zip` | `zip.hash` |
+| `rar2john` | Extract hash from RAR archives | `locked.rar` | `rar.hash` |
+| `pdf2john.py` | Extract hash from password-protected PDFs | `document.pdf` | `pdf.hash` |
+| `office2john.py` | Extract hash from Microsoft Office files | `report.docx` | `office.hash` |
+| `keepass2john` | Extract hash from KeePass databases | `vault.kdbx` | `keepass.hash` |
+| `hccap2john` | Convert WPA/WPA2 captures | `capture.hccap` | `wifi.hash` |
+| `unshadow` | Combine Linux passwd/shadow files | `passwd shadow` | `combined.txt` |
 ssh2john
 
     Extracts password hashes from encrypted SSH private keys.
