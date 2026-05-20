@@ -1,68 +1,102 @@
-#John The Ripper Overview
+# John The Ripper Overview
 
-What is John the Ripper?
+## What is John the Ripper?
 
-John the Ripper (often called JtR) is a popular open-source password security auditing and password recovery tool available on Linux, Windows, and macOS.
+John the Ripper (often called **JtR**) is a popular open-source password security auditing and password recovery tool available on Linux, Windows, and macOS.
 
 It is commonly used by:
 
-Security professionals
-System administrators
-Penetration testers
-Digital forensics analysts
-Developers testing password strength
+- Security professionals
+- System administrators
+- Penetration testers
+- Digital forensics analysts
+- Developers testing password strength
 
 John the Ripper can:
 
-Crack password hashes
-Test password strength
-Recover lost passwords
-Audit weak credentials
-Work with many hash formats and encrypted files
+- Crack password hashes
+- Test password strength
+- Recover lost passwords
+- Audit weak credentials
+- Work with many hash formats and encrypted files
 
-##The Jumbo version supports:
+---
 
-ZIP files
-SSH keys
-PDF files
-Office documents
-WPA/WPA2 handshakes
-Kerberos tickets
-RAR archives
-KeePass databases
-And many more
-Installing John the Ripper on Linux
-Ubuntu / Debian
+## The Jumbo Version Supports
+
+- ZIP files
+- SSH keys
+- PDF files
+- Office documents
+- WPA/WPA2 handshakes
+- Kerberos tickets
+- RAR archives
+- KeePass databases
+- And many more
+
+---
+
+# Installing John the Ripper on Linux
+
+## Ubuntu / Debian
+
+```bash
 sudo apt update
 sudo apt install john -y
-Fedora
-sudo dnf install john
-Arch Linux
-sudo pacman -S john
-Verify Installation
-john --version
-Basic Terminology
-Term	Meaning
-Hash	A one-way encrypted representation of data
-Wordlist	A text file containing possible passwords
-Cracking	Attempting to recover the original password
-Salt	Random data added before hashing
-Dictionary Attack	Using a list of passwords
-Brute Force	Trying every possible combination
-Basic Usage
-Cracking a Hash File
+```
 
-Suppose you have a file called hashes.txt.
+## Fedora
+
+```bash
+sudo dnf install john
+```
+
+## Arch Linux
+
+```bash
+sudo pacman -S john
+```
+
+---
+
+## Verify Installation
+
+```bash
+john --version
+```
+
+---
+
+# Basic Terminology
+
+| Term | Meaning |
+|---|---|
+| Hash | A one-way encrypted representation of data |
+| Wordlist | A text file containing possible passwords |
+| Cracking | Attempting to recover the original password |
+| Salt | Random data added before hashing |
+| Dictionary Attack | Using a list of passwords |
+| Brute Force | Trying every possible combination |
+
+---
+
+# Basic Usage
+
+## Cracking a Hash File
+
+Suppose you have a file called `hashes.txt`.
 
 Example:
 
+```text
 user:$6$randomsalt$3vQ6...
+```
 
 Run:
 
+```bash
 john hashes.txt
-Showing Cracked Passwords
-john --show hashes.txt
+```
 
 Example output:
 
