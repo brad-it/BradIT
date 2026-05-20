@@ -143,60 +143,71 @@ hccap2john
         john wifi.hash
 
 
-##Cracking Modes Table
+## Cracking Modes Table
 
-Mode             | Description	                | Example Command                              |	Best Use Case
-Single Crack     |	Uses usernames and metadata	| 'john --single hashes.txt'                   | Fast weak-password discovery
-Wordlist Mode    |	Uses password lists	        | john --wordlist=rockyou.txt hashes.txt       |	Common password auditing
-Incremental Mode |	Brute-force combinations    |	john --incremental hashes.txt              |	Unknown passwords
-Rules Mode       |	Mutates wordlists           | john --wordlist=words.txt --rules hashes.txt |	Realistic password variations
-Mask Mode        |	Uses specific patterns      | john --mask='?d?d?d?d' hashes.txt          |	PINs or known patterns
-Fork Mode        |	Multi-process cracking      | john --fork=4 hashes.txt                   |	Multi-core CPUs
-Session Mode     |	Save and restore sessions   | john --session=test hashes.txt             |	Long cracking jobs
+| Mode | Description | Example Command | Best Use Case |
+|---|---|---|---|
+| Single Crack | Uses usernames and metadata | `john --single hashes.txt` | Fast weak-password discovery |
+| Wordlist Mode | Uses password lists | `john --wordlist=rockyou.txt hashes.txt` | Common password auditing |
+| Incremental Mode | Brute-force combinations | `john --incremental hashes.txt` | Incremental brute-force |
+| Mask Mode | Realistic password variations | `john --mask='?d?d?d?d' hashes.txt` | Mutates wordlists / patterns |
+| Fork Mode | Multi-process cracking | `john --fork=4 hashes.txt` | Multi-core CPUs |
+| Session Mode | Save and restore sessions | `john --session=test hashes.txt` | Long cracking jobs |
 
+---
 
-##Useful Commands Reference
+## Useful Commands Reference
 
-Command	                            | Description
-john hashes.txt                     | Start cracking
-john --show hashes.txt              | Show cracked passwords
-john --wordlist=file.txt hashes.txt | Dictionary attack
-john --incremental hashes.txt       | Brute-force mode
-john --single hashes.txt            | Single crack mode
-john --restore                      | Resume previous session
-john --session=name hashes.txt      | Create named session
-john --fork=4 hashes.txt            | Multi-process cracking
-john --format=bcrypt hashes.txt	    | Specify hash format
-john --list=formats	                | List supported formats
-john --test                         | Benchmark performance
-john --mask='?d?d?d?d' hashes.txt   | Crack using masks
+| Command | Description | Example |
+|---|---|---|
+| `john hashes.txt` | Start cracking | `john --show hashes.txt` |
+| `john --show hashes.txt` | Show cracked passwords | `john --wordlist=file.txt hashes.txt` |
+| `john --wordlist=file.txt hashes.txt` | Dictionary attack | `john --incremental hashes.txt` |
+| `john --incremental hashes.txt` | Brute-force mode | `john --single hashes.txt` |
+| `john --single hashes.txt` | Single crack mode | `john --restore` |
+| `john --restore` | Resume previous session | `john --session=name hashes.txt` |
+| `john --session=name hashes.txt` | Create named session | `john --fork=4 hashes.txt` |
+| `john --fork=4 hashes.txt` | Multi-process cracking | `john --format=bcrypt hashes.txt` |
+| `john --format=bcrypt hashes.txt` | Specify hash format | `john --list=formats` |
+| `john --list=formats` | List supported formats | `john --test` |
+| `john --test` | Benchmark performance | `john --mask='?d?d?d?d' hashes.txt` |
+| `john --help` | Show help | `john --version` |
+| `john --version` | Show version | - |
 
-Hash Format Reference Table
+---
 
-Hash Type	| Example Prefix        |	Common Usage
-raw-md5	    |    5f4dcc...	        |   Legacy applications
-raw-sha1    |	cbfdac...	        |   Older software systems
-bcrypt	    |   $2a$	            |   Modern web applications
-sha512crypt	|   $6$	                |   Linux password hashes
-NT	        |   32-character NTLM	|   Windows systems
-zip	        |   ZIP encrypted data	|   ZIP archives
-rar	        |   RAR encrypted data	|   RAR archives
-KeePass	    |   KeePass database    |   Password vaults
-pdf	        |   PDF encryption	    |   Protected documents
+## Hash Format Reference Table
 
-Example Hashes for Practice
-MD5 Example
-5f4dcc3b5aa765d61d8327deb882cf99
-SHA1 Example
-cbfdac6008f9cab4083784cbd1874f76618d2a97
+| Hash Type | Example Prefix | Common Usage | Example |
+|---|---|---|---|
+| MD5 | `$raw-md5$` | Legacy applications | `$raw-md5$5f4dcc3b5aa765d61d8327deb882cf99` |
+| SHA1 | `$raw-sha1$` | Older software systems | `$raw-sha1$cbfdac6008f9cab4083784cbd1874f76618d2a97` |
+| bcrypt | `$2a$` or `$2b$` | Modern web applications | `$2a$10$KYVbZ5JFVfqu0oV98LnF5e...` |
+| NT | `31d6cfe0d16ae931b73c59d7e0c089c0` | Windows systems | `31d6cfe0d16ae931b73c59d7e0c089c0` |
+| ZIP | `PKZIP$` | ZIP encrypted data | `PKZIP$*2*0*1*...` |
+| RAR | `$RAR3$` | RAR archives | `$RAR3$*0*1*...` |
+| KeePass | `$keepass$` | KeePass databases | `$keepass$*10240*...` |
+| PDF | `$pdf$` | PDF encryption | `$pdf$1*16*128*-1024*...` |
+| Office | `$office$` | MS Office documents | `$office$*2007*100000*128*16*...` |
+
+---
+
+## Example Hashes for Practice
+
+| Hash Type | Example Hash | Description |
+|---|---|---|
+| MD5 | `5f4dcc3b5aa765d61d8327deb882cf99` | Example MD5 |
+| SHA1 | `cbfdac6008f9cab4083784cbd1874f76618d2a97` | Example SHA1 |
 
 ⚠️ These are public demonstration hashes.
 
-##Tips and Best Practices
+---
 
-    Use strong and unique passwords
-    Prefer password managers
-    Use long passphrases
-    Enable MFA/2FA whenever possible
-    Regularly audit password strength
-    Avoid using common wordlists as real passwords
+## Tips and Best Practices
+
+- ✅ Use strong and unique passwords
+- ✅ Prefer password managers
+- ✅ Use long passphrases
+- ✅ Enable MFA/2FA whenever possible
+- ✅ Regularly audit password strength
+- ✅ Avoid using common wordlists as real passwords
