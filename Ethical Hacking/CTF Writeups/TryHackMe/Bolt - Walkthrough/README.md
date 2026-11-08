@@ -130,7 +130,6 @@ Final Result	Root access obtained, flag retrieved
 
     Metasploit
 
-
 ---
 
 ## ⚠️ Lessons Learned
