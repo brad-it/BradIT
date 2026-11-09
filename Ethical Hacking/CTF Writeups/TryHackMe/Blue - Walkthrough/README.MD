@@ -1,6 +1,22 @@
 # TryHackMe: Blue — EternalBlue Walkthrough
 
-Room: https://tryhackme.com/room/blue  
+Room: https://tryhackme.com/room/blue
+
+---
+
+## 📑 Table of Contents
+
+- [Nmap Scan](#nmap-scan)
+- [Nmap Vulnerability Scan](#nmap-vulnerability-scan)
+- [Exploitation with Metasploit](#exploitation-with-metasploit)
+  - [Set Target](#set-target)
+  - [✅ Shell Access](#shell-access)
+- [Privilege Escalation](#privilege-escalation)
+  - [Running Processes](#running-processes)
+  - [Migrate to SYSTEM](#migrate-to-system)
+- [Dumping NTLM Hashes](#dumping-ntlm-hashes)
+- [Finding the Flags](#finding-the-flags)
+- [Summary](#summary)
 
 ---
 

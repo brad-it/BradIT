@@ -3,6 +3,26 @@
 
 **Room URL:** https://tryhackme.com/room/kenobi
 
+---
+
+## 📑 Table of Contents
+
+- [Reconnaissance & Enumeration](#reconnaissance--enumeration)
+  - [Initial Nmap Scan](#initial-nmap-scan)
+  - [Enumerating SMB Shares](#enumerating-smb-shares)
+  - [NFS Enumeration](#nfs-enumeration)
+- [Initial Access](#-initial-access)
+  - [ProFTPD Exploitation](#proftpd-exploitation)
+  - [Mounting the NFS Share](#mounting-the-nfs-share)
+  - [SSH Key Access](#ssh-key-access)
+- [First Flag (User Flag)](#first-flag-user-flag)
+- [Privilege Escalation](#-privilege-escalation)
+  - [SUID Binary Enumeration](#suid-binary-enumeration)
+  - [Analyzing the Menu Binary](#analyzing-the-menu-binary)
+  - [Exploiting PATH Hijacking](#exploiting-path-hijacking)
+- [Second Flag (Root Flag)](#second-flag-root-flag)
+- [Summary](#-summary)
+
 **Difficulty:** Easy
 
 **Objective:** Exploit a Linux machine with multiple services (FTP, SMB, NFS, SSH) to gain initial access and escalate privileges to root.

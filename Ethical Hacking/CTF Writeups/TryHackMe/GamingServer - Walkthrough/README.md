@@ -8,13 +8,15 @@ Room: https://tryhackme.com/room/gamingserver
 
 - [Nmap Scan](#-nmap-scan)
 - [Reconnaissance & Enumeration](#-reconnaissance--enumeration)
-  - [Gobuster Directory Enumeration]
+  - [Gobuster Directory Enumeration](#gobuster-directory-enumeration)
+  - [Source Code Review](#source-code-review)
+  - [Secret Directory Discovery](#secret-directory-discovery)
 - [Initial Access](#-initial-access)
-  - [Cracking the SSH Key Passphrase]
-  - [SSH Access Gained]
+  - [Cracking the SSH Key Passphrase](#cracking-the-ssh-key-passphrase)
+  - [SSH Access Gained](#ssh-access-gained)
 - [Privilege Escalation](#-privilege-escalation)
-  - [LXD Group Discovery]
-  - [Exploiting LXD via Alpine Builder]
+  - [LXD Group Discovery](#lxd-group-discovery)
+  - [Exploiting LXD via Alpine Builder](#exploiting-lxd-via-alpine-builder)
 - [Summary](#-summary)
 - [Tools Used](#-tools-used)
 
