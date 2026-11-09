@@ -1,4 +1,3 @@
-#tryhackme #kenobi #smb #nfs #proftpd #privilege-escalation #linux
 
 # TryHackMe: Kenobi Room Walkthrough
 
