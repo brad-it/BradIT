@@ -16,21 +16,30 @@ All content is for **educational and defensive security purposes only**.
 ### 🟢 Beginner
 Focuses on foundational knowledge required to understand how systems communicate and how attackers interact with them.
 
-- Networking Basics  
-- Linux Fundamentals  
+- Networking Basics
+- Linux Fundamentals
 
 ---
 
 ### 🟡 Intermediate
 Introduces common attacker techniques used to identify and exploit weaknesses in systems and applications.
 
-- Web Application Security  
-- Enumeration & Scanning  
+- Web Application Security
+- Enumeration & Scanning
 
 ---
 
 ### 🔴 Advanced
 Covers post-exploitation activity and attacker tradecraft, with an emphasis on how these actions can be detected and mitigated.
 
-- Exploitation & Privilege Escalation  
-- Red Teaming  
+- Exploitation & Privilege Escalation
+- Red Teaming
+
+---
+
+## 📁 Repository Structure
+
+| Folder | Contents |
+|--------|----------|
+| `Ethical Hacking Tools/` | Notes on common offensive security tools (Nmap, Burp Suite, Metasploit, Hydra, John the Ripper, hashcat, Gobuster, sqlmap). |
+| `CTF Writeups/` | Writeups from Capture The Flag challenges (TryHackMe, etc.). |
