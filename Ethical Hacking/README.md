@@ -25,10 +25,7 @@ Each section is a self-contained learning artifact. Readers can jump straight in
 
 If you prefer to browse the walkthroughs first rather than read the prose introduction, the TryHackMe writeups live under `CTF Writeups/TryHackMe/` with one room per subfolder. Open any of the four below and follow the commands in order.
 
-[TryHackMe — Blue](CTF%20Writeups/TryHackMe/Blue%20-%20Walkthrough/README.MD)
-[TryHackMe — Kenobi](CTF%20Writeups/TryHackMe/Kenobi%20-%20Walkthrough/README.md)
-[TryHackMe — GamingServer](CTF%20Writeups/TryHackMe/GamingServer%20-%20Walkthrough/README.md)
-[TryHackMe — Bolt](CTF%20Writeups/TryHackMe/Bolt%20-%20Walkthrough/README.md)
+[TryHackMe Writeups](CTF%20Writeups)
 
 ---
 
