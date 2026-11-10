@@ -1,48 +1,35 @@
 # 🛡️ Ethical Hacking Notes | Red Team |
 
 Cybersecurity beginner | Ethical hacking notes
-Documenting my learning journey through hands-on challenges.
+Documenting my learning journey through hands-on challenges, so others can follow along.
 
-This repository documents my structured ethical hacking learning path, aligned with a progressive roadmap from beginner to advanced concepts.
+I want this repository to be the central place where I research ethical hacking techniques — attacker methods, tool usage, and methodologies — with the explicit goal of strengthening defensive detection, monitoring, and incident response capabilities. Everything here is educational and defensive security only; all work is limited to systems I own or have written permission to test.
 
-The purpose of this repository is to understand attacker techniques, tools, and methodologies in order to strengthen defensive detection, monitoring, and incident response capabilities.
+## My Learning Plan
 
-All content is for educational and defensive security purposes only.
+I follow a staged roadmap from foundational concepts to advanced attack tradecraft, with each stage mapping directly to practical demonstrations below. The goal is not just to learn the tools, but to show how each one fits into a real attack lifecycle — reconnaissance, exploitation, privilege escalation — so that defense follows naturally from offense.
 
----
+- **Beginner** — Networking Basics and Linux Fundamentals, the foundation for understanding how systems talk and how attackers interact with them.
+- **Intermediate** — Web Application Security and Enumeration & Scanning, the common techniques attackers use to find weaknesses in live systems.
+- **Advanced** — Exploitation & Privilege Escalation and Red Teaming, covering what happens after initial access and how those actions can be detected and mitigated.
 
-## Tools
+## How This Repo Will Be Used
 
-I document the security tools I use and study in this repository. They span network discovery, web application testing, password cracking, and exploit development:
+Each section is a self-contained learning artifact. Readers can jump straight into any tool note, walkthrough, or project without needing the full roadmap context — but they'll still see how everything connects back to the roadmap stages above. For readers who want the full progression, the roadmap at the top explains the reasoning; for readers who just want to follow along, each item has its own file linked inline.
 
-Nmap — Network discovery and scanning
-Gobuster — Directory and file brute-forcing
-Burp Suite — Web application security testing
-sqlmap — SQL injection testing
-Metasploit — Exploitation framework
-Hydra — Password cracking
-John The Ripper — Password auditing and recovery
-hashcat — Hash cracking
+- **Tools** — every tool gets its own page with what it does, why it matters, and where it appears in the attack lifecycle
+- **CTF Walkthroughs** — real Capture The Flag rooms walking through end-to-end attacks; these are case studies for the techniques above, not just finished reports
+- **Projects** — hands-on exercises where I apply multiple tools together to practice end-to-end recon workflows
 
----
+## Jump Directly to the Writeups
 
-## CTF Walkthroughs
+If you prefer to browse the walkthroughs first rather than read the prose introduction, the TryHackMe writeups live under `CTF Writeups/TryHackMe/` with one room per subfolder. Open any of the four below and follow the commands in order.
 
-These are my writeups from TryHackMe Capture The Flag rooms. They walk through real attacks end-to-end — recon, exploitation, privilege escalation — so they double as case studies for each technique covered in the tools section above.
-
-Blue — EternalBlue (MS17-010) exploitation with Metasploit, privilege escalation to SYSTEM, NTLM hash dumping
-Kenobi — NFS share mounting, SSH key access, SUID binary PATH hijacking to root
-GamingServer — SSH key passphrase cracking, LXD container escape to root
-Bolt — Web enumeration, Bolt CMS exploit via Metasploit
+[TryHackMe — Blue](CTF%20Writeups/TryHackMe/Blue%20-%20Walkthrough/README.MD)
+[TryHackMe — Kenobi](CTF%20Writeups/TryHackMe/Kenobi%20-%20Walkthrough/README.md)
+[TryHackMe — GamingServer](CTF%20Writeups/TryHackMe/GamingServer%20-%20Walkthrough/README.md)
+[TryHackMe — Bolt](CTF%20Writeups/TryHackMe/Bolt%20-%20Walkthrough/README.md)
 
 ---
 
-## Projects
-
-These are the hands-on projects I built as part of my learning — real exercises where I apply every tool above to practice end-to-end recon workflows:
-
-Enumeration sandbox
-
----
-
-Disclaimer: The techniques, tools, and walkthroughs documented here are for educational, defensive, and authorized testing purposes only. Only apply these methods to systems you own or have explicit written permission to test.
+> ⚠️ **Disclaimer:** The techniques, tools, and walkthroughs documented here are for educational, defensive, and authorized testing purposes only. Only apply these methods to systems you own or have explicit written permission to test.
